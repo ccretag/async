@@ -1,19 +1,22 @@
 <html>
 <body>
-    <h1>demo As</h1>
+    <h1>demo s</h1>
     <canvas id="Canvas1" width="800" height="600" style="border: 1px solid black;"></canvas>
     <script>
         var c1 = document.getElementById("Canvas1");
         var ct1 = c1.getContext("2d");
         ct1.font = "8px Monospace";
 
+        await draw()
+asyn function draw(){
          for(i=0; i<20; i++){
               ct1.fillRect(0,0,i*20,200)
              await delay()
          }
-
+}
+    
 async function delay(){
-     await new Promise(resolve => setTimeout(resolve, 20))
+     await new Promise(resolve => setTimeout(resolve, 50))
   }
 
     </script>
