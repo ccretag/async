@@ -1,6 +1,6 @@
 <html>
 <body>
-    <h1>demo dr <h1>
+    <h1>demo der <h1>
     <canvas id="Canvas1" width="800" height="600" style="border: 1px solid black;"></canvas>
     <script>
         var c1 = document.getElementById("Canvas1");
@@ -11,12 +11,12 @@
 async function draw(){
          for(i=0; i<20; i++){
               ct1.fillRect(0,0,i*20,200)
-             await delay()
+             await delay(100)
          }
 }
     
-async function delay(){
-     await new Promise(resolve => setTimeout(resolve, 50))
+async function delay(de){
+     await new Promise(resolve => setTimeout(resolve, de))
   }
 
     </script>
