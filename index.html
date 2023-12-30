@@ -10,11 +10,15 @@
      draw()
  async function draw(){
          for(i=0; i<40; i++){
-              ct1.fillRect(0,0,i*10,200)
+             plot(i)
+              ct1.fillRect(0,0,i*10,i*5)
              await delay(40)
          }
 }
-    
+
+function plot(x){
+    ct1.fillRect(0,300,x*10,x*5)
+}
 async function delay(de){
      await new Promise(resolve => setTimeout(resolve, de))
   }
